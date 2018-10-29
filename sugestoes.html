@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/grid.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/doar.css">
+	<link rel="stylesheet" type="text/css" href="css/sugestoes.css">
 
 </head>
 
@@ -26,7 +26,7 @@
 			<a href="index.html" class="grid-4 logo">
 				<img src="img/marca.png" alt="Pet">
 			</a> -->
-			<a href="index.html" class="grid-4 btn btn-header">
+			<a href="index.html" class="grid-4 btn btn-preto">
 				<p>EYP</p>
 			</a>
 
@@ -34,8 +34,8 @@
 
 				<ul>
 					
-					<li><a href="adotar.html">Adotar</a></li>
-					<li><a href="doar.html" class="menu_ativo">Doar</a></li>
+					<li><a href="jogos.html">Jogos</a></li>
+					<li><a href="sugestoes.html" class="menu_ativo">Sugestões</a></li>
 					<li><a href="sobre.html">Sobre</a></li>
 					<li><a href="contato.html">Contato</a></li>
 
@@ -50,12 +50,10 @@
 	<!-- Termina o cabeçalho -->
 	<!-- Inicia a introdução -->
 
-	<section class="introducao-interna interna_doar">
+	<section class="introducao introducao-interna interna_doar">
 
 		<div class="container">
-			<h1>Doações</h1>
-			<p>Doe aqui um animal</p>
-
+			<h1>Sugestões</h1>
 		</div>
 		
 	</section>
@@ -80,14 +78,12 @@
 			<label for="telefone">Telefone</label>
 			<input id="telefone" name="telefone" type="text">
 
-			<label for="nome_animal">Nome do animal</label>
+			<label for="nome_animal">Nome da historia*</label>
 			<input id="nome_animal" name="nome_animal" type="text">
 
-			<label for="informacao">Informações o animal (alergias, restrições...)</label>
+			<label for="informacao">Link para encontrar a história em texto ou vídeo*</label>
 			<input id="informacao" name="informacao" type="text">
 
-			<label for="especificacao">Raça*</label>
-			<input id="especificacao" name="especificacao" type="text" required>
 
 			<!-- Fim dos dados -->
 			<!-- Teste -->
@@ -100,35 +96,12 @@
 
 			<!-- Fim do teste -->
 
-			<label for="doacao">Motivo da doação</label>
+			<label for="doacao">Descrição resumida da história</label>
 			<textarea name="doacao"></textarea>
 
 			<button id="enviar" name="enviar" type="submit" class="btn btn-preto">Enviar</button>
 
 		</form>
-
-
-
-		<div class="animal_dados grid-8">
-
-			<h3>Animal a ser doado:</h3>
-
-			<select class="box">
-
-				<option></option>
-				<option>Ave</option>
-				<option>Cachorro</option>
-				<option>Coelho</option>
-				<option>Cobra</option>
-				<option>Gato</option>
-				<option>Ramister</option>
-				<option>Tartaruga</option>
-				<option>Outro</option>
-
-			</select>
-
-		</div>
-		
 
 	</section>
 
