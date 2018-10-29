@@ -28,13 +28,13 @@ img{
 }
 
 .btn:hover{
-	color: #FFF;
-	border-color: #FFF;
+	color: #000;
+	border-color: #000;
 }
 
 .btn.btn-preto:hover{
-	color: #000;
-	border-color: #000;
+	color: #FFFFFF;
+	border-color: #FFF;
 }
 
 /* Subtitulo interno */
