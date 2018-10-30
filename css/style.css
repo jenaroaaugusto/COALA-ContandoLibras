@@ -184,6 +184,7 @@ img{
 
 .descricao{
 	text-align: center;
+	font-size: 18px;
 }
 
 .quote-externo p{
@@ -283,6 +284,10 @@ img{
 
 .call p{
 	margin-bottom: 25px;
+}
+
+.coala{
+	color: #8854a1;
 }
 
 /* Adotar */
