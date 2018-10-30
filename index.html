@@ -4,252 +4,304 @@
 
 <head>
 
-	<meta charset="utf-8">
-	<title>Ern your pet</title>
+    <meta charset="utf-8">
+    <title>Ern your pet</title>
 
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/grid.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 
 <body>
 
-	<!-- Faz o cabeçalho -->
+<!-- Faz o cabeçalho -->
 
-	<header class="header">
-		
-		<div class="container">
-			<a href="index.html" class="grid-4 btn btn-preto">
-				<p>EYP</p>
-			</a>
+<header class="header">
 
-			<nav class="grid-12 header_menu">
+    <div class="container">
+        <a href="index.html" class="grid-4 btn btn-preto">
+            <p>EYP</p>
+        </a>
 
-				<ul>
-					
-					<li><a href="jogos.html">Jogos</a></li>
-					<li><a href="sugestoes.html">Sugestoes</a></li>
-					<li><a href="sobre.html">Sobre</a></li>
-					<li><a href="contato.html">Contato</a></li>
+        <nav class="grid-12 header_menu">
 
-				</ul>
+            <ul>
 
-			</nav>
+                <li><a href="contos.html">Contos</a></li>
+                <li><a href="jogos.html">Jogos</a></li>
+                <li><a href="sugestoes.html">Sugestoes</a></li>
+                <li><a href="contato.html">Contato</a></li>
 
-		</div>
+            </ul>
 
-	</header>
+        </nav>
 
-	<!-- Termina o cabeçalho -->
+    </div>
 
-	<section class="introducao">
+</header>
 
-		<div class="container">
+<!-- Termina o cabeçalho -->
 
-			<h1>COALA - Contando Libras</h1>
+<section class="introducao">
 
-			<blockquote class="quote-externo">
+    <div class="container">
 
-				<p>"O homem nasceu para lutar e a sua vida é uma eterna batalha."</p>
-				<cite>THOMAS CARLYLE</cite>
+        <h1>COALA - Contando Libras</h1>
 
-			</blockquote>
-			
-			<a href="sugestoes.html" class="btn">Sugestões</a>
+        <blockquote class="quote-externo">
 
-		</div>
-		
-	</section>
+            <p>"O homem nasceu para lutar e a sua vida é uma eterna batalha."</p>
+            <cite>THOMAS CARLYLE</cite>
 
-	<!-- Fecha a introdução -->
+        </blockquote>
 
-	<!-- Inicia a Doaoção -->
+        <a href="sugestoes.html" class="btn">Sugestões</a>
 
-	<section class="doar container animar">
-		
-		<h2 class="subtitulo">Doar</h2>
+    </div>
 
-		<ul class="doar_lista">
+</section>
 
-			<!-- Inicia o primeiro animal -->
+<!-- Fecha a introdução -->
 
-			<li class="grid-8">
+<section class="doar container animar">
 
-				<div >
+    <h2 class="subtitulo">Descrição</h2>
 
-					<img src="img/doar/sad.jpg" alt="sad icone" class="doar_img">
+    <p class="descricao">COALA - COntAndo LibrAs, O projeto foi criado em 2018 por alunos da Universidade Federal de São
+        João Del Rei, <br>com o objetivo de contar
+        contos infantis para crianças surdas.
+        Todos devem ter o gosto dos prazeres da infância <br>e tentamos trazer um pouco para aqueles que não conheciam
+        as histórias da Disney.
+    </p>
 
-				</div>
+</section>
 
-			</li>
+<!-- Fecha Informação inicial -->
 
-			<p align="center" class="grid-8 doar_p">Se você não quer mais o seu<br> animal de estimação, <br>Ele teve filhotes,<br>Vai se mudar...</p>
+<!-- Inicia a Contos -->
+<!--Corrigir e inserir no css  style corretamente -->
+<style>
+    * {
+        box-sizing: border-box;
+    }
 
-			<!-- Finaliza o primeiro animal -->
-			<!-- Inicia segundo o animal -->
+    /* Create two equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px; /* Should be removed. Only for demonstration */
+    }
 
-			<div class="segundo ">
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 
-				<p align="center" class="grid-8 doar_p">Não os abandone, animais são vidas, <br>E como tais, merecem um lar...</p>
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+        }
+    }
+</style>
 
-				<li class="grid-8">
+<section class="doar container">
 
-					<div>
+    <h2 class="subtitulo">Contos</h2>
 
-						<img src="img/doar/rua.jpg" alt="rua icone" class="doar_img">
+    <div class="row">
+        <div class="column">
+            <div class="grid-8">
 
-					</div>
+                <iframe height="305" src="https://www.youtube.com/embed/7q1kF5N1gHs" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <h3>Rapunzel</h3>
+                <p>Descrição da história</p>
+            </div>
+        </div>
 
-				</li>
+        <div class="column">
+            <div class="grid-8">
+                <iframe height="305" src="https://www.youtube.com/embed/JuCVU9rGUa8" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <h3>Chapeuzinho Vermelho</h3>
+                <p>Descrição da história</p>
+            </div>
+        </div>
+    </div>
 
-			</div>
+    <div class="row" style=" padding-top: 50px;">
+        <div class="column">
+            <div class="grid-8">
 
-			<!-- Finaliza o segundo animal -->
-			<!-- Inicia terceiro o animal -->
+                <iframe height="305" src="https://www.youtube.com/embed/feBeOzpw2Xc" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <h3>A Cigarra e a formiga</h3>
+                <p>Descrição da história</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="grid-8">
 
-			<div class="terceiro">
+                <iframe height="305" src="https://www.youtube.com/embed/3PmKBVxaAfY" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <h3>A festa no céu</h3>
+                <p>Descrição da história</p>
+            </div>
+        </div>
+    </div>
 
-				<li class="grid-8">
+    <div class="row" style=" padding-top: 50px;">
+        <div class="column">
+            <div class="grid-8">
 
-					<div>
+                <iframe height="305" src="https://www.youtube.com/embed/1TPI8U4l_0E" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <h3>A bela adormecida</h3>
+                <p>Descrição da história</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="grid-8">
 
-						<img src="img/doar/happy.jpg" alt="happy icone" class="doar_img">
+                <iframe height="305" src="https://www.youtube.com/embed/4mUS3Wc-rGo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <h3>A pequena sereia</h3>
+                <p>Chegada do Porta-Helicópteros Multipropósito "Atlântico"</p>
+            </div>
+        </div>
+    </div>
 
-					</div>
 
-				</li>
+    <div class="call">
+        <p>Conheça nosso repositório com diversos contos!!!!</p>
+        <a href="contos.html" class="btn">Contos</a>
+    </div>
 
-				<p align="center" class="grid-8 doar_p">Doe aqui, e faça com que seu animal<br> seja feliz com uma outra família!!</p>
+</section>
 
-			</div>
+<!-- Fecha Contos -->
 
-			<!-- Finaliza terceiro o animal -->
 
-		</ul>
+<!-- Inicia a adoção -->
 
-		<div class="call">
-			<p>Clique aqui e doe um animal</p>
-			<a href="sugestoes.html" class="btn btn-preto">Doar</a>
-		</div>
+<section class="fotos">
 
-	</section>
+    <div class="container">
 
-	<!-- Fecha Doação -->
+        <h2 class="subtitulo">Adote</h2>
 
-	<!-- Inicia a adoção -->
+        <div class="portfolio_lista">
 
-	<section class="fotos">
+            <ul class="fotos_lista rslides_adotar">
 
-		<div class="container">
+                <li>
 
-			<h2 class="subtitulo">Adote</h2>
+                    <div class="grid-8"><img src="img/adotar/rato.jpg" alt="Rato"></div>
+                    <div class="grid-8"><img src="img/adotar/dog.jpg" alt="Dog"></div>
+                    <div class="grid-16"><img src="img/adotar/husky.jpg" alt="Coelho"></div>
 
-			<div class="portfolio_lista">
-				
-				<ul class="fotos_lista rslides_adotar">
+                </li>
 
-				<li>
+                <li>
 
-					<div class="grid-8"><img src="img/adotar/rato.jpg" alt="Rato" ></div>
-					<div class="grid-8"><img src="img/adotar/dog.jpg" alt="Dog" ></div>
-					<div class="grid-16"><img src="img/adotar/husky.jpg" alt="Coelho"></div>
+                    <div class="grid-8"><img src="img/adotar/coelho.jpg" alt="coelho" class="menores"></div>
+                    <div class="grid-8"><img src="img/adotar/tartaruga.jpg" alt="tartaruga" class="menores"></div>
+                    <div class="grid-16"><img src="img/adotar/cat.jpg" alt="cat"></div>
 
-				</li>
+                </li>
 
-					<li>
 
-					<div class="grid-8"><img src="img/adotar/coelho.jpg" alt="coelho" class="menores"></div>
-					<div class="grid-8"><img src="img/adotar/tartaruga.jpg" alt="tartaruga" class="menores"></div>
-					<div class="grid-16"><img src="img/adotar/cat.jpg" alt="cat"></div>
+            </ul>
 
-				</li>
+        </div>
 
-				
+        <div class="call">
+            <p>Clique aqui e adote o seu animal</p>
+            <a href="jogos.html" class="btn btn-preto">Adote</a>
+        </div>
 
-			</ul>
+    </div>
 
-			</div>
+</section>
 
-			<div class="call">
-				<p>Clique aqui e adote o seu animal</p>
-				<a href="jogos.html" class="btn btn-preto">Adote</a>
-			</div>
+<!-- Fecha Adoção -->
 
-		</div>
+<!-- Inicia rodape -->
 
-	</section>
+<div class="quebra">
 
-	<!-- Fecha Adoção -->
+    <blockquote class="quote-externo container">
 
-	<!-- Inicia rodape -->
+        <p>“O caminho para se conseguir a felicidade é fazendo as outras pessoas felizes.” </p>
+        <cite>ROBERT BADEN-POWELL</cite>
 
-	<div class="quebra">
-		
-		<blockquote class="quote-externo container">
+    </blockquote>
 
-			<p>“O caminho para se conseguir a felicidade é fazendo as outras pessoas felizes.” </p>
-			<cite>ROBERT BADEN-POWELL</cite>
+</div>
 
-		</blockquote>
+<footer>
 
-	</div>
+    <div class="footer">
 
-	<footer>
+        <div class="container">
 
-		<div class="footer">
+            <div class="grid-8 footer_historia">
+                <h3>Nossa História</h3>
+                <p>O site foi criado com o objetivo de trazer diminuir a quantidade de animais abandonados nas ruas.
+                    Levando felicidade à vida dos animais e de suas novas famílias</p>
+            </div>
 
-			<div class="container">
+            <div class="grid-4 footer_contato">
+                <h3>Contato</h3>
+                <ul>
+                    <li>-+55 032 99173-1875</li>
+                    <li>-earnyourpet@gmail.com</li>
+                    <li>-Earn Your Pet - MG</li>
+                </ul>
+            </div>
 
-				<div class="grid-8 footer_historia">
-					<h3>Nossa História</h3>
-					<p>O site foi criado com o objetivo de trazer diminuir a quantidade de animais abandonados nas ruas. Levando felicidade à vida dos animais e de suas novas famílias</p>
-				</div>
+            <div class="grid-4 footer_redes">
 
-				<div class="grid-4 footer_contato">
-					<h3>Contato</h3>
-					<ul>
-						<li>-+55 032 99173-1875</li>
-						<li>-earnyourpet@gmail.com</li>
-						<li>-Earn Your Pet - MG</li>
-					</ul>
-				</div>
+                <h3>Redes Sociais</h3>
 
-				<div class="grid-4 footer_redes">
-					
-					<h3>Redes Sociais</h3>
-					
-					<ul>
-						
-						<li><a href="http://facebook.com" target="_blank"><img src="img/icone/facebook-roxo.png" alt="Facebook Bikcraft" ></a></li>
-						<li><a href="http://instagram.com" target="_blank"><img src="img/icone/instagram-roxo.png" alt="instagram Bikcraft"></a></li>
-						<li><a href="http://twitter.com" target="_blank"><img src="img/icone/twitter-roxo.png" alt="Twitter Bikcraft"></a></li>
-					
-					</ul>
+                <ul>
 
-				</div>
+                    <li><a href="http://facebook.com" target="_blank"><img src="img/icone/facebook-roxo.png"
+                                                                           alt="Facebook Bikcraft"></a></li>
+                    <li><a href="http://instagram.com" target="_blank"><img src="img/icone/instagram-roxo.png"
+                                                                            alt="instagram Bikcraft"></a></li>
+                    <li><a href="http://twitter.com" target="_blank"><img src="img/icone/twitter-roxo.png"
+                                                                          alt="Twitter Bikcraft"></a></li>
 
-			</div>
+                </ul>
 
-		</div>
+            </div>
 
-		<div class="copy">
-			
-			<div class="container">
-				<p class="grid-16">Earn Your Pet 2017 - Alguns direitos reservados</p>
-			</div>
-			
-		</div>
+        </div>
 
-	</footer>
+    </div>
 
-	<!-- Final do rodapé -->
+    <div class="copy">
 
+        <div class="container">
+            <p class="grid-16">Earn Your Pet 2017 - Alguns direitos reservados</p>
+        </div>
 
-	<script src="JS/libs/jquery-1.11.2.min.js"></script>
-	<script src="JS/plugins.js"></script>
-	<script src="JS/main.js"></script>
+    </div>
+
+</footer>
+
+<!-- Final do rodapé -->
+
+
+<script src="JS/libs/jquery-1.11.2.min.js"></script>
+<script src="JS/plugins.js"></script>
+<script src="JS/main.js"></script>
 
 </body>
 
