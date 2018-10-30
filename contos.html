@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/grid.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/sobre.css">
+	<link rel="stylesheet" type="text/css" href="css/contos.css">
 
 </head>
 
@@ -22,11 +22,8 @@
 	<header class="header">
 
 		<div class="container">
-			<!-- Faz o cabeçalho
-			<a href="index.html" class="grid-4 logo">
-				<img src="img/marca.png" alt="Pet">
-			</a> -->
-			<a href="index.html" class="grid-4 btn btn-header">
+
+			<a href="index.html" class="grid-4 btn btn-preto">
 				<p>EYP</p>
 			</a>
 
@@ -53,7 +50,7 @@
 
 		<div class="container quote-externo">
 			<h1>Contos</h1>
-			<p>Sessão que contém um repositório de contos em Libras</p>
+			<p>Sessão que contém as mais diversas histórias infantis em libras</p>
 
 		</div>
 
@@ -62,45 +59,107 @@
 
 	<!-- Fecha a introdução -->
 
-	<!-- Inicia a descrição -->
+<!--Corrigir e inserir no css  style corretamente -->
+<style>
+    * {
+        box-sizing: border-box;
+    }
 
-	<section class="missa_sobre container animar-interno">
+    /* Create two equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px; /* Should be removed. Only for demonstration */
+    }
 
-		<div class="grid-10">
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 
-			<h2 class="subtitulo-interno">História, missão e visão</h2>
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+        }
+    }
+</style>
 
-			<p>O projeto Eran Your Pet teve início em 2017, com o objetivo de diminuir a quantidade de animais nas ruas e semear a felicidade em várias famílias com uma nova vida, um animal de estimação.</p>
-			<p>Existem diversos animais há serem doados, basta escolher um, amor não se compra.</p>
+<section class="doar container">
 
-		</div>
+    <h2 class="subtitulo">Contos</h2>
 
-		<div class="grid-6">
+    <div class="row">
+        <div class="column">
+            <div class="grid-8">
 
-			<h2 class="subtitulo-interno">Valores</h2>
-			<ul>
-				<li>-Trabalho com foco,</li>
-				<li>-na felicidade dos animais</li>
-				<li>-proprorcionando a estes</li>
-				<li>-a chance de uma nova vida</li>
-				<li>-de um novo lar</li>
-			</ul>
+                <iframe height="305" src="https://www.youtube.com/embed/7q1kF5N1gHs" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <h3>Rapunzel</h3>
+                <p>Descrição da história</p>
+            </div>
+        </div>
 
-		</div>
+        <div class="column">
+            <div class="grid-8">
+                <iframe height="305" src="https://www.youtube.com/embed/JuCVU9rGUa8" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <h3>Chapeuzinho Vermelho</h3>
+                <p>Descrição da história</p>
+            </div>
+        </div>
+    </div>
 
-		<div class="grid-16 foto-pet">
+    <div class="row" style=" padding-top: 50px;">
+        <div class="column">
+            <div class="grid-8">
 
-			<img src="img/sobre-img.jpg" alt="Alegria animais">
+                <iframe height="305" src="https://www.youtube.com/embed/feBeOzpw2Xc" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <h3>A Cigarra e a formiga</h3>
+                <p>Descrição da história</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="grid-8">
 
-		</div>
+                <iframe height="305" src="https://www.youtube.com/embed/3PmKBVxaAfY" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <h3>A festa no céu</h3>
+                <p>Descrição da história</p>
+            </div>
+        </div>
+    </div>
 
-	</section>
+    <div class="row" style=" padding-top: 50px;">
+        <div class="column">
+            <div class="grid-8">
 
-	<!-- Finaliza a descrição -->
+                <iframe height="305" src="https://www.youtube.com/embed/1TPI8U4l_0E" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <h3>A bela adormecida</h3>
+                <p>Descrição da história</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="grid-8">
+
+                <iframe height="305" src="https://www.youtube.com/embed/4mUS3Wc-rGo" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <h3>A pequena sereia</h3>
+                <p>Chegada do Porta-Helicópteros Multipropósito "Atlântico"</p>
+            </div>
+        </div>
+    </div>
+
+</section>
 
 	<!-- Inicia rodape -->
 
-	<div class="quebra">
+	<div class="quebra quebra-interna">
 
 		<blockquote class="quote-externo container">
 
