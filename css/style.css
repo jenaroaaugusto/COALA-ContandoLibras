@@ -454,3 +454,11 @@ img{
 	background: #8854a1;
 	color: #8854a1;
 }
+
+.tales {
+	width: 100%;
+  }
+  .carousel-inner{
+	width:100%;
+	max-height: 3500px !important;
+  }
