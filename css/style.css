@@ -37,6 +37,9 @@ img{
 	border-color: #FFF;
 }
 
+.btn-header{
+	padding: 10px 40px;
+}
 /* Subtitulo interno */
 
 .subtitulo{
@@ -138,7 +141,7 @@ img{
 
 .header .btn{
 	border: 3px solid #8854a1;
-	width: 11%; 
+	width: 15%;
 }
 
 .header .btn:hover{
