@@ -1,4 +1,3 @@
-# 100DaysOfCode
+# COALA
 
-No desafio do 100DaysOfCode, foi desenvolvido um site para adoção de pets. 
-Aproveitando para olocar em prática conhecimentos sobre WebDesing
+Projeto criado com o intuito de gerar um ambiente virtual para crianças surdas.
