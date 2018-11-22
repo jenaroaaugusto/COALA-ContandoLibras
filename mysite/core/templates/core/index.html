@@ -171,7 +171,7 @@
 
     <div class="call">
         <p>Conheça nosso repositório com diversos contos!!!!</p>
-        <a href="contos.html" class="btn">Contos</a>
+        <a href="{% url 'contos' %}" class="btn">Contos</a>
     </div>
 
 </section>
@@ -192,17 +192,17 @@
 
         <h2 class="subtitulo">Jogos</h2>
     <div class="card" style="width: 20rem; background: black;">
-        <img class="card-img-top" src="{% static 'memoria/titulo.png' %}" alt="Card image cap">
+        <img class="card-img-top" src="{% static 'img/titulo.png' %}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title" style="color: white;">Jogo da Memoria</h5>
           <p class="card-text"></p>
-          <a style=" padding-bottom: 2em;" href="{% static 'memoria/index.html' %}" class="btn btn-preto">Jogar</a>
+          <a style=" padding-bottom: 2em;" href="{% url 'memoria' %}" class="btn btn-preto">Jogar</a>
         </div>
       </div>
 
         <div class="call">
             <p>Clique aqui e conheça nossos jogos</p>
-            <a href="jogos.html" class="btn btn-preto">Jogos</a>
+            <a href="{% url 'jogos' %}" class="btn btn-preto">Jogos</a>
         </div>
 
     </div>
@@ -286,8 +286,6 @@
 <script src="{% static 'js/plugins.js' %}"></script>
 <script src="{% static 'js/main.js' %}"></script>
 <!-- Paginas-->
-
-
 
 
 </body>

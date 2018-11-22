@@ -85,10 +85,9 @@
 		<img id="imgGameOver" src="{% static 'img/gameover.png' %}" />
 	</div>
 	</div>
-	
-	
-	
+	{{ images|json_script:"images-data" }}
 	<script src="{% static 'js/script.js' %}"></script>
+
 </body>
 </html>
 

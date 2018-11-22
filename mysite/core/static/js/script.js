@@ -3,7 +3,8 @@
 	
 
 	//array que armazenará os objetos com src e id de 1 a 8
-	var images = [];
+	var images = JSON.parse(document.getElementById('images-data').textContent);
+
 	
 	//imagem a ser exibida em caso de acerto
 	var matchSign = document.querySelector("#match");
@@ -16,19 +17,7 @@
 	
 	//variável contadora de acertos. ao chegar em 8 o jogo termina
 	var matches = 0;
-	
-	//estrutura de atribiução das imagens aos card
-	for(var i = 0; i < 16; i++){
-		//cria um objeto img com um src e um id
-		var img = {
-			src: "img/" + i + ".gif",
-			id: i%8
-		};
-		
-		//inserer o objeto criado no array
-		images.push(img);
-	}
-	
+
 	//chama a função de inicialização do jogo
 	startGame();
 	

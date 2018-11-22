@@ -1,7 +1,7 @@
 from django.shortcuts import render,  redirect
 
 from core.forms import SubscriptionForm
-from django.http import HttpResponse
+from django.templatetags.static import static
 
 
 def home(request):
@@ -30,7 +30,11 @@ def jogos(request):
 
 
 def memoria(request):
-    return render(request, 'core/memoria.html')
+    images = [
+        {'src': static('img/%s.gif' % str(i)), 'id': i % 8}
+        for i in range(0, 16)
+    ]
+    return render(request, 'core/memoria.html', {'images': images})
 
 
 def desenhos(request):
