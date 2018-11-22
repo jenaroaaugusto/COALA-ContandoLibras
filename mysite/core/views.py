@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,  redirect
 
 from core.forms import SubscriptionForm
 from django.http import HttpResponse
@@ -9,7 +9,15 @@ def home(request):
 
 
 def contato(request):
-    form = SubscriptionForm()
+    if request.method == "POST":
+        form = SubscriptionForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.save()
+            return redirect('success')
+    else:
+        form = SubscriptionForm()
     return render(request, 'core/contato.html', {'form': form})
 
 
@@ -27,3 +35,7 @@ def memoria(request):
 
 def desenhos(request):
     return render(request, 'core/desenhos.html')
+
+
+def success(request):
+    return render(request, 'core/success.html')

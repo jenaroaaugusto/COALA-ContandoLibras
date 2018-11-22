@@ -25,4 +25,5 @@ urlpatterns = [
     path('jogos', jogos, name="jogos"),
     path('memoria', memoria, name="memoria"),
     path('desenhos', desenhos, name="desenhos"),
+    path('success', success, name="success"),
 ]
